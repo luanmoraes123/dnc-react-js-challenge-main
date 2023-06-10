@@ -1,0 +1,43 @@
+.header {
+    background-color: #0C70F2;
+    height: 74px;
+
+    ul {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        padding-left: 60px;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 40px;
+        padding-bottom: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+        font-family: 'poppins';
+    }
+
+    a:last-child {
+        display: flex;
+        align-items: center;
+    }
+
+    .tarefas {
+        color: #0C70F2;
+    }
+
+    .background-white {
+        display: flex;
+        align-items: flex-end;
+        padding: 8px 40px 5px;
+        height: 40px;
+        background: white;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
