@@ -21,4 +21,37 @@
         height: 6px;
         background-color: #D9D9D9;
     }
+
+    .novaTarefa{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        button{
+            border: none;
+            background-color: #2D2D2D;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+
+        input{
+            background-color: #2D2D2D;
+            border: none;
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 25px;
+            font-style: italic;
+            color: white;
+            text-align: left;
+        }
+
+        input::placeholder{
+            color: white;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    }
 }

@@ -4,10 +4,11 @@ import "./index.scss";
 import Inicial from "./views/inicial/Inicial";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Inicial />,
+    element: <Inicial/>,
   }
 ]);
 

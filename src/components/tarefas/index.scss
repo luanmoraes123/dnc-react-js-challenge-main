@@ -1,0 +1,62 @@
+.tarefas {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    input[type=checkbox]+label:before {
+        content: '';
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background: url(../../icones/box.svg) no-repeat;
+        background-size: 18px 18px;
+    }
+
+    input[type=checkbox]:checked+label:before {
+        content: '';
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background: url(../../icones/checkbox.svg) no-repeat;
+        background-size: 18px 18px;
+    }
+
+    button:first-child {
+        margin-right: 20px;
+    }
+
+    button {
+        width: 26px;
+        background-color: #2D2D2D;
+        border: 0px;
+    }
+
+    .container{
+        width: 33%;
+
+        &__button{
+            width: 33%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -3,10 +3,10 @@ import Header from '../../components/header/Header';
 import Todo from '../../components/todo/Todo';
 import './index.scss'
 
-function Inicial() {
+const Inicial = () => {
     return (
         <div>
-            <Header />
+            <Header/>
             <div className='principal'>
                 <h1>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
                 <Todo />

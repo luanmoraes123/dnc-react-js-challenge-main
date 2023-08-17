@@ -1,0 +1,1 @@
+export const Tarefas = ['lavar casa', 'lavar prato', 'dar comida ao cachorro'];
