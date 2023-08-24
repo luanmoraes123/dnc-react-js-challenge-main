@@ -3,12 +3,12 @@
     text-align: center;
     justify-content: center;
     width: 100%;
-    font-family: 'poppins';
-
-    h1 {
+    
+    &__heading {
         font-weight: 600;
         font-size: 40px;
         color: white;
         margin-bottom: 130px;
+        font-family: 'Raleway';
     }
 }

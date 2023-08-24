@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './index.scss'
 import Tarefas from '../tarefas/Tarefas';
 import novaTarefa from '../../icones/new.svg'
 
-const Todo = () => {
+const Todo = (props) => {
 
-    const tarefas = ['lavar casa', 'lavar prato', 'dar comida ao cachorro'];
-    const adicionaTarefa = () => {
-        const input = document.querySelector('#novaTarefa');
-        tarefas.push(input.value);
-    }
+    const [tarefas, setTarefas] = useState(props.lista);
+    
+    useEffect(() => {
+        props.onSubmit(tarefas);
+    }, [tarefas])
+    
+    
     return (
         <section className='todo'>
             <div className='head'>
@@ -19,14 +21,19 @@ const Todo = () => {
             </div>
             <div className='barra'></div>
             {
-                tarefas.map((tarefa, index) => (
-                    <Tarefas tarefa={tarefa} index={index} key={index} />
-                ))
+                    props.lista.map((tarefa, index) => (
+                        <Tarefas tarefa={tarefa} index={index} key={index} />
+                    ))     
             }
-            <div className='novaTarefa'>
+            <form className='novaTarefa' onSubmit={(event)=> {
+                event.preventDefault();
+                const input = document.querySelector('#novaTarefa');
+                setTarefas([...tarefas, input.value]);
+                input.value = '';
+            }}>
                 <input placeholder='nova tarefa...' type="text" id='novaTarefa'/>
-                <button onClick={adicionaTarefa}><img src={novaTarefa} alt="" onClick={adicionaTarefa} /></button>
-            </div>
+                <button type='submit'><img src={novaTarefa} alt=""/></button>
+            </form>
         </section>
     )
 }
