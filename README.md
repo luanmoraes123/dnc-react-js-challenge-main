@@ -27,6 +27,7 @@ Aplicação desenvolvida para listar e visualizar tarefas, com o objetivo de col
 - React Router Dom
 - Sass
 - JSON Server
+- React Icons
 
 <hr>
 
@@ -54,15 +55,3 @@ $ npm run dev
 
 <hr>
 
-by Felipe Borges<br>
-<div>
-	<a href="https://www.linkedin.com/in/felipejsborges">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/linkedin.svg" alt="LinkedIn">
-	</a>
-	<a href="https://wa.me/+55012996477129">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/whatsapp.svg" alt="WhatsApp">
-	</a>
-	<a href="mailto:felipejsborges@outlook.com">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/mail.svg" alt="E-mail">
-	</a>
-</div>
