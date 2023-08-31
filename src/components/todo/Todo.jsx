@@ -28,6 +28,7 @@ const Todo = (props) => {
             <form className='novaTarefa' onSubmit={(event)=> {
                 event.preventDefault();
                 const input = document.querySelector('#novaTarefa');
+                if(input.value === "") return;
                 setTarefas([...tarefas, input.value]);
                 input.value = '';
             }}>
