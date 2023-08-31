@@ -50,7 +50,7 @@ $ npm run server
 # abra outro terminal e rode o projeto
 $ npm run dev
 ```
-- [Acesse a aplicação](http://localhost:5173)
+- [Acesse a aplicação](https://64e79a53b2bdbc055450a82b--gleaming-sorbet-e889a7.netlify.app/))
 
 <hr>
 
