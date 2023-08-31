@@ -15,6 +15,9 @@
     }
 
     a {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 5px;
         text-decoration: none;
         color: rgb(0, 0, 0);
         font-weight: 600;
@@ -23,7 +26,9 @@
     }
 
     a:hover {
-        background: #016fffd7;
+
+        background: black;
         color: white;
+        border-radius: 5px;
     }
 }
