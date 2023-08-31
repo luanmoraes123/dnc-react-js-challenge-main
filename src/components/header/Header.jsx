@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <header className='header'>
             <ul>
-                <li><a href="">Organização</a></li>
-                <li className='background-white'><a className="tarefas" href="">Tarefas</a></li>
+                <li><a href="#">Organização</a></li>
+                <li><a href="#">Tarefas</a></li>
             </ul>
         </header>
     )

@@ -40,9 +40,7 @@
         background-size: 18px 18px;
     }
 
-    button:first-child {
-        margin-right: 20px;
-    }
+    
 
     button {
         width: 26px;
@@ -57,6 +55,7 @@
             width: 33%;
             display: flex;
             justify-content: flex-end;
+            gap: 20px;
         }
     }
 }
